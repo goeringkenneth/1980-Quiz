@@ -1,6 +1,6 @@
 var questions={
     position:0,
-    qustionlist:[
+    questionList:[
         {
             // Top Gun
         question:"Two of your Snot-Nose Jockeys did a fly-by on my tower at over 400 KNOTS! I want somebody's butt, I want it now, I've HAD IT!",
@@ -79,3 +79,21 @@ var questions={
 };
 
 // run questions with index
+function quizInfo(){
+    var questionEl= questions.questionList[0].question;
+    var questionEls=document.querySelector('.question p');
+    questionEls.textContent=questionEl
+    console.log(questionEl);
+    function takeQuiz(){
+    //  questions.questionList[0].choices=options;
+    var options=document.querySelectorAll('.quiz button');
+    options.forEach(option=>{
+      option.addEventListener("click", function(){
+        console.log(this);
+        });
+        });
+        
+    };
+    takeQuiz();
+    };
+    quizInfo();

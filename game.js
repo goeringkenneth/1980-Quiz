@@ -9,6 +9,7 @@ function game(){
       start.addEventListener('click', function(){
         introScreen.classList.add('fadeOut');
         quizScreen.classList.add('fadeIn');
+
        
         
         function setTimer() {
@@ -31,20 +32,20 @@ function game(){
     
 // brings up question 1
 // start game/timer
-    function takeQuiz(){
-      var options=document.querySelectorAll('.quiz button');
-      var questionEl=document.querySelector('.question')
+    // function takeQuiz(){
+    //   var options=document.querySelectorAll('.quiz button');
+    //   var questionEl=document.querySelector('.question')
+    //   var optionsEl=options.
+    //   options.forEach(option=>{
+    //     option.addEventListener("click", function(){
+    //       console.log(this);
+    //     });
+    //   });
       
-      options.forEach(option=>{
-        option.addEventListener("click", function(){
-          console.log(this);
-        });
-      });
-      
-      };
+    //   };
 
 
-      takeQuiz();
+    //   takeQuiz();
     };
     setTimer();
     });
