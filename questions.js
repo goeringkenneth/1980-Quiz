@@ -79,19 +79,23 @@ var questions={
 };
 
 // run questions with index
+
+// make function for questions array info to pass into "questionsList"
+var a=
+//changes HTML
 function quizInfo(){
-    var questionEl= questions.questionList[0].question;
+    var questionEl= questions.questionList[a].question;
     var question=document.querySelector('.question p');
     question.textContent=questionEl
     console.log(questionEl);
+    
     function takeQuiz(){
-    //  questions.questionList[0].choices=options;
-    var optionsEl= questions.questionList[0].choices;
-    var options=document.querySelectorAll('.quiz button');
-    var buttonOne=document.querySelector(".first");
-    var buttonTwo=document.querySelector(".second");
-    var buttonThree=document.querySelector(".third");
-    var buttonFour=document.querySelector(".fourth");
+    var optionsEl= questions.questionList[a].choices;
+    const options=document.querySelectorAll('.quiz button');
+    const buttonOne=document.querySelector(".first");
+    const buttonTwo=document.querySelector(".second");
+    const buttonThree=document.querySelector(".third");
+    const buttonFour=document.querySelector(".fourth");
         buttonOne.textContent=optionsEl[0];
         buttonTwo.textContent=optionsEl[1];
         buttonThree.textContent=optionsEl[2];
