@@ -9,15 +9,61 @@ function game(){
       start.addEventListener('click', function(){
         introScreen.classList.add('fadeOut');
         quizScreen.classList.add('fadeIn');
+       
+        
+        function setTimer() {
+          var timerEl=document.querySelector('.timer');
+  var secondsLeft=60*2;
+    var timerInterval = setInterval(function() {
+      secondsLeft--;
+      timerEl.textContent= secondsLeft;
+  
+      if(secondsLeft === 0) {
+        clearInterval(timerInterval);
+      }
+      
+  
+    }, 1000);console.log(timerEl);
+  
+  
+ 
+      
+    
+// brings up question 1
+// start game/timer
+    function takeQuiz(){
+      var options=document.querySelectorAll('.quiz button');
+      var questionEl=document.querySelector('.question')
+      
+      options.forEach(option=>{
+        option.addEventListener("click", function(){
+          console.log(this);
+        });
       });
+      
+      };
+
+
+      takeQuiz();
     };
-    startGame();
+    setTimer();
+    });
+  };
+  startGame();
 };
 
-// start game/timer
+      
+    
+    
+// answer result subtract time if worng
+//go to next question
+
+
+
+
+
 game();
 
-// brings up question 1
 // answer result subtract time if worng
 //go to next question
 
