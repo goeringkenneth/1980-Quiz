@@ -2,81 +2,75 @@ var questions={
     position:0,
     qustionlist:[
         {
-
-        question:"q1",
-        choices:["w","w","c","w",
-
-        ],
+            // Top Gun
+        question:"Two of your Snot-Nose Jockeys did a fly-by on my tower at over 400 KNOTS! I want somebody's butt, I want it now, I've HAD IT!",
+        choices:["Big Trouble Little China","Airplane","Top Gun","Weird Science",],
         answer:3
     },
     {
+        // The Goonies
+        question:"Heyyy Yooouuu GuuuUUUyys!!!!",
+        choices:["w","w","w","The Goonies",],
+        answer:4
+    },
+    {
+        // Airplane
+        question:"Does anyone here speak Jive?",
+        choices:["w","Airplane","w","w",],
+        answer:2
+    },
+    {
+        // Sixteen Candles 
+        question:"Long Duck Dong has been here for five fours, and he's got somebody. I live here my whole life, and I'm like a disease.",
+        choices:["Sixteen Candles","w","w","w",
 
-        question:"q2",
-        choices:["w","w","w","c",
+        ],
+        answer:1
+    },
+    {
+        // Breakfast Club
+        question:"Don't mess with the bull, young man. You'll get the horns.",
+        choices:["w","w","w","Breakfast Club",
 
         ],
         answer:4
     },
     {
+        // License To Drive
+        question:"Now Anderson, I want you to take a good look at my cup of coffee. Now, I love my coffee. It's probably the only thing I cherish on this god forsaken mud ball called Earth!",
+        choices:["License To Drive","w","w","w",
 
-        question:"q3",
-        choices:["w","c","w","w",
+        ],
+        answer:1
+    },
+    {
+        // Weird Science
+        question:" By the way, why are we wearing bras on our heads?",
+        choices:["w","Weird Science","w","w",
 
         ],
         answer:2
     },
     {
-
-        question:"q4",
-        choices:["c","w","w","w",
+        // Ferris Buller's Day Off
+        question:" Pardon my French, but Cameron is so tight that if you stuck a lump of coal up his ass, in two weeks you'd have a diamond.",
+        choices:["Ferris Buller's Day Off","w","w","w",
 
         ],
         answer:1
     },
     {
-
-        question:"q5",
-        choices:["w","w","w","c",
+        // Then NeverEnding Story
+        question:"Having a luck dragon with you is the only way to go on a quest.",
+        choices:["w","w","w","Then NeverEnding Story",
 
         ],
         answer:4
     },
     {
-
-        question:"q6",
-        choices:["c","w","w","w",
-
-        ],
-        answer:1
-    },
-    {
-
-        question:"q7",
-        choices:["w","c","w","w",
-
-        ],
-        answer:2
-    },
-    {
-
-        question:"q8",
-        choices:["c","w","w","w",
-
-        ],
-        answer:1
-    },
-    {
-
-        question:"q9",
-        choices:["w","w","w","c",
-
-        ],
-        answer:4
-    },
-    {
-
-        question:"q10",
-        choices:["w","c","w","w",
+        // Big Trouble in Little China 
+        question:"This is Jack Burton in the Pork Chop Express, and I’m talkin’ to whoever’s listenin’ out there.",
+        choices:["w","Big Trouble in Little China ","w","w",
 
         ],
         answer:2
