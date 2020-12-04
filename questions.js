@@ -81,12 +81,22 @@ var questions={
 // run questions with index
 function quizInfo(){
     var questionEl= questions.questionList[0].question;
-    var questionEls=document.querySelector('.question p');
-    questionEls.textContent=questionEl
+    var question=document.querySelector('.question p');
+    question.textContent=questionEl
     console.log(questionEl);
     function takeQuiz(){
     //  questions.questionList[0].choices=options;
+    var optionsEl= questions.questionList[0].choices;
     var options=document.querySelectorAll('.quiz button');
+    var buttonOne=document.querySelector(".first");
+    var buttonTwo=document.querySelector(".second");
+    var buttonThree=document.querySelector(".third");
+    var buttonFour=document.querySelector(".fourth");
+        buttonOne.textContent=optionsEl[0];
+        buttonTwo.textContent=optionsEl[1];
+        buttonThree.textContent=optionsEl[2];
+        buttonFour.textContent=optionsEl[3];
+        console.log(optionsEl[0]);
     options.forEach(option=>{
       option.addEventListener("click", function(){
         console.log(this);
