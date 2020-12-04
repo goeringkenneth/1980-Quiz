@@ -31,7 +31,12 @@ div{
     /* justify-content: center; */
     
 }
-
+.header{
+    margin-top: auto;
+    height:5vh;
+    width:100vw;
+    background-color: lightslategrey;
+}
 .quiz{
 width:100vw;
 height:100vh;

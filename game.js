@@ -16,7 +16,7 @@ function game(){
   var secondsLeft=60*2;
     var timerInterval = setInterval(function() {
       secondsLeft--;
-      timerEl.textContent= secondsLeft+" Seconds Left";
+      timerEl.textContent= secondsLeft+"sec Left";
   
       if(secondsLeft === 0) {
         clearInterval(timerInterval);
