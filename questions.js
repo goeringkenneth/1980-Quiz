@@ -1,7 +1,9 @@
+function question(a){
+   
 var questions={
     position:0,
     questionList:[
-        {
+    {
             // Top Gun
         question:"Two of your Snot-Nose Jockeys did a fly-by on my tower at over 400 KNOTS! I want somebody's butt, I want it now, I've HAD IT!",
         choices:["Big Trouble Little China","Airplane","Top Gun","Weird Science",],
@@ -75,21 +77,22 @@ var questions={
         ],
         answer:2
     },
+        
     ]
-};
 
+}
 // run questions with index
 
-// make function for questions array info to pass into "questionsList"
-var a=
-//changes HTML
-function quizInfo(){
-    var questionEl= questions.questionList[a].question;
-    var question=document.querySelector('.question p');
-    question.textContent=questionEl
-    console.log(questionEl);
-    
-    function takeQuiz(){
+// make function for questions array, an the info to pass into "questionsList"
+    for (let i = 0; i < questions.questionList.length; i++) {
+        const question = questions.questionList[i].question;
+        var questionEl=questions.questionList[a].question;
+         
+        // questionEl=question[a]
+
+   var questionDoc=document.querySelector('.question p');
+       questionDoc.textContent=questionEl;
+    }
     var optionsEl= questions.questionList[a].choices;
     const options=document.querySelectorAll('.quiz button');
     const buttonOne=document.querySelector(".first");
@@ -100,7 +103,9 @@ function quizInfo(){
         buttonTwo.textContent=optionsEl[1];
         buttonThree.textContent=optionsEl[2];
         buttonFour.textContent=optionsEl[3];
-        console.log(optionsEl[0]);
+        answerEl=questions.questionList[a].answer;
+        console.log(answerEl)
+        // console.log(optionsEl[a]);
     options.forEach(option=>{
       option.addEventListener("click", function(){
         console.log(this);
@@ -108,6 +113,7 @@ function quizInfo(){
         });
         
     };
-    takeQuiz();
-    };
-    quizInfo();
+    question(0);
+   
+   
+    
